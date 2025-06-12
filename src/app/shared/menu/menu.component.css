@@ -1,0 +1,20 @@
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background: linear-gradient(90deg, #f8fafc 0%, #e0e7ff 100%);
+    border-radius: 2rem;
+    box-shadow: 0 4px 16px rgba(60, 72, 88, 0.08);
+    max-width: 500px;
+}
+.nav-link {
+    color: #374151;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-link.active,
+.nav-link:hover {
+    background: #6366f1;
+    color: #fff !important;
+}

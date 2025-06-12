@@ -1,0 +1,13 @@
+<div class="postres-list">
+  <div *ngFor="let postre of postres; let i = index" class="postre-item">
+    <div class="postre-header nav-link" [class.active]="abierto === i" (click)="toggleDetalle(i)">
+      <span>{{ postre.nombre }}</span>
+    </div>
+    <div class="postre-detalle" *ngIf="abierto === i">
+      <img [src]="postre.imagen" alt="{{ postre.nombre }}" class="postre-img">
+      <ol>
+        <li *ngFor="let paso of postre.pasos">{{ paso }}</li>
+      </ol>
+    </div>
+  </div>
+</div>
